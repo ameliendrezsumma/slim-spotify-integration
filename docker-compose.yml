@@ -1,0 +1,20 @@
+version: '3.3'
+
+volumes:
+    logs:
+        driver: local
+
+services:
+    slim:
+        image: php:7-alpine
+        working_dir: /var/www
+        command: php -S 0.0.0.0:80 -t public
+        environment:
+            docker: "true",
+            CLIENT_ID: "a2df81d85e124f3d8151bbec2b1607dd",
+            CLIENT_SECRET: "49ec7d43a2cf472c92cb879a67775d9d"
+        ports:
+            - 80:80
+        volumes:
+            - .:/var/www
+            - logs:/var/www/logs
