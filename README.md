@@ -12,7 +12,7 @@ For serve the application, you neet to run:
 -   docker run --rm -v "$(pwd):/app" composer composer install
 
 
-After that, open `http://localhost:80` in your browser.
+After that, open `http://localhost` in your browser.
 For test the api, you can use the follow endpoint:
 
 - http://localhost/api/v1/albums?q=[nombre de banda]
