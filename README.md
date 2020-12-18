@@ -15,6 +15,6 @@ For serve the application, you neet to run:
 After that, open `http://localhost:80` in your browser.
 For test the api, you can use the follow endpoint:
 
-- http://localhost/api/v1/albums?q=<band-name>
+- http://localhost/api/v1/albums?q=[nombre de banda]
 
 For example http://localhost/api/v1/albums?q=Queen
